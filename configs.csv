@@ -1,0 +1,2 @@
+Id,name,path,method
+1,Get NewStore Associate App configuration,/api/v1/associate-app/config, GET
