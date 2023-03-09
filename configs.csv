@@ -1,2 +1,36 @@
-Id,name,path,method
-1,Get NewStore Associate App configuration,/api/v1/associate-app/config, GET
+Id,name,path,method,Grouping,Comments
+1,Get NewStore Associate App configuration,/api/v1/associate-app/config, GET,Associate App Config,
+18,Get Availability Webhook Config,/v0/config/availability/webhook,GET,Availability Config,
+26,List transaction types,/_/v0/cash_drawer_config/transaction_types,GET,Cash Drawer,
+27,List Cash  transaction types,/api/v1/org/config/cash_transaction_types,GET,Cash Drawer,
+7,Get Email SMTP Settings,/api/v1/org/config/email,GET ,Email/Notifications,
+19,Get External OMS Config,/v0/config/sales_order/external_oms,GET,External OMS,
+9,Get Fulfilment App Config,/v0/i/configuration/fulfillment_app,GET,FA Config,
+3,Get Newstore Stock Locations,/v0/stock_locations, GET,Inventory Management ,List stock locations - This would also list the DC addresses
+5,Get Newstore locations Store,/v0/locations,GET,Inventory Management ,These are List of Fulfilment Locations
+6,Get Newstore Adjustment Reasons,v0/i/inventory/adjustment_reasons?should_include_inactive=true,GET,Inventory Management ,
+20,Get transfer shipping configuration,/v0/i/inventory/transfer_shipping_config,GET,Inventory Management ,
+21,Get return configuration,/v0/stock_locations/return_process_configuration,GET,Inventory Management ,
+22,List stores,/v0/d/stores,GET,Inventory Management ,List of Physical Stores - Not sure if we need this as we might be creating all the other banner stores as DC not store
+34,Retailer Configuration,/v0/i/configuration,GET,Inventory Management ,Also has Reciept/ Document type Config/ Printing
+25,List approval rules,/_/v0/dontuse/manager_approval,GET,Manager Approval Rules,
+28,Get shopping cart,/v1/p/config/newstore_checkout,GET,NewStore Checkout,New Store Check out Config
+8,Get NOM Settings Configuration,/api/v1/org/config/nom,GET,NOM Config,
+29,Get reason codes by type and tenant,/api/v1/org/config/reason_code_types/{type}/reason_codes,GET,NOM Config,
+35,Get NOM release toggles,/v0/config/nom_configuration/release_toggles,GET,NOM Config,Whats visible in NOM
+4,Get Newstore Order ID Sequience,/v0/config/sales_order/sales_order_generator_sequence, GET,Orders,
+10,Get Cash Transaction Types,/api/v1/org/config/cash_transaction_types,GET,Payments,
+11,Get Payment Options,/v1/p/config/payment_options,GET,Payments,
+12,Get Payment Account Config,/v1/p/config/payment_account,GET,Payments,
+13,Get Financial Documents Config,/v0/c/financial-documents/config,GET,Payments,
+14,Get Adyen Adaptor Config,/v1/p/config/adyen_adapter,GET,Payments,
+15,Get Fat PSP Config,/v1/p/config/fat_psp,GET,Payments,
+16,Get Adyen PSP Config,v1/p/config/psp_adyen,GET,Payments,
+17,Get Gift Card Config,/v1/p/config/gift_card,GET,Payments,
+30,List Styles,/v0/d/templates/styles,GET,Receipt/Emails,List Styles - E/g CSS styles would need to be used as input for GET styles
+31,Get Style,/v0/d/templates/styles/{style_name},GET,Receipt/Emails,
+32,List Templates,/v0/d/templates/templates,GET,Receipt/Emails,List Templates - Would need to be used a input 
+33,Get Templates,/v0/d/templates/templates/{template_id}/localization/{locale},GET,Receipt/Emails,
+23,Get Carriers,/v0/d/config/delivery/carriers,GET,Shipping/Delivery,Store Transfer and Routing Config is dependent on this 
+24,Get fulfillment config,/_/v0/dontuse/fulfillment_config,GET,Shipping/Delivery,This is for Order Routing  for EA
+2,Get Newstore Tax Settings,/api/v2/f11n/taxes/config, GET,Tax,
